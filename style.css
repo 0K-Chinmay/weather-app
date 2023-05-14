@@ -19,12 +19,12 @@ body{
 }
 .container{
     position: relative;
-    width: 350px;
+    width: 450px;
     height:85px;
     background: rgb(255, 255, 255);
     border-radius: 22px ;
     font-family: 'Roboto', sans-serif;
-    padding: 18px 15px;
+    padding: 18px 34px;
     transition: 0.6s ease;
     overflow: hidden;
 }
