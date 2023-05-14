@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background: #06283D;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg.jpg');
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    
+}
+.container{
+    position: relative;
+    width: 420px;
+    height:85px;
+    background: rgb(255, 255, 255);
+    border-radius: 22px ;
+    font-family: 'Roboto', sans-serif;
+    padding: 18px 20px;
+    transition: 0.6s ease;
+    overflow: hidden;
+}
+.search{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}       
+.search input{
+    border: none;
+    font-size: x-large;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+}
+.search input::placeholder{
+    text-transform: capitalize;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color:rgb(242, 233, 248);
+}
+.button:hover{
+    color:white;
+    background-color: #06283D;
+    transition: background-color 0.2s ease-in;
+}
+.errorbut{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.error span{
+    cursor: pointer;
+    position:relative;
+    background-color:rgb(242, 233, 248);
+    width: 110px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.error span:hover{
+    color:white;
+    background-color: #06283D;
+    transition: background-color 0.2s ease-in;
+}
+.error img{
+    padding-right: 20px;
+    scale:1;
+    opacity: 1;
+    height: 400px;
+    width: 400px;
+    display: block;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    opacity: 0;
+    scale: 0;
+}
+.details{
+    scale:0;
+    opacity: 0;
+    display: flex;
+    padding: 50px 14px;
+    padding-bottom: 22px;
+    align-items: center;
+    justify-content: space-between;
+}
+.wind{
+   display: flex;
+   align-items: flex-end;
+   padding-left:0.1px;
+   padding-right: 130px;
+
+}
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
