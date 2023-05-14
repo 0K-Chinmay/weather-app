@@ -7,7 +7,7 @@
 body{
     background: #06283D;
     display: flex;
-    height: 350px;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     background-image: url('bg.jpg');
@@ -19,7 +19,7 @@ body{
 }
 .container{
     position: relative;
-    width: 21vw;
+    width: 350px;
     height:85px;
     background: rgb(255, 255, 255);
     border-radius: 22px ;
