@@ -90,13 +90,25 @@ body{
     display: block;
 }
 .temp{
-    display: flex;
-    align-items: center;
+    display:grid;
     justify-content: center;
+    align-items: center;
     padding: 25px;
     opacity: 0;
     scale: 0;
 }
+.temp .t{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+    font-weight: 500;
+}
+.temp .d{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
 .details{
     scale:0;
     opacity: 0;
@@ -107,8 +119,8 @@ body{
     justify-content: space-between;
 }
 .wind{
-   display: flex;
-   align-items: flex-end;
+   display: grid;
+   justify-content: center;
    padding-left:0.1px;
    padding-right: 130px;
 
@@ -117,10 +129,17 @@ body{
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
-
+.temp img{
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+}
 @keyframes fadeIn{
     to {
         scale: 1;
         opacity: 1;
     }
+}
+@media screen and (max-width:600px){
+    /*change the property here which will change the property if the size of the screen is less than 600px*/
 }
